@@ -37,7 +37,7 @@ HEADER
 
 .main-nav__list-link:hover,
 .main-nav__list-link:active {
-  color: var(--primary-color-light-2); /* do zmiany jeszcze */
+  color: var(--primary-color-light-1); /* do zmiany jeszcze */
   border-bottom: 2px solid var(--color-white);
 }
 
@@ -58,6 +58,7 @@ SECTION HERO
   align-items: center;
   background-attachment: fixed;
   height: 91vh;
+  margin-bottom: 9.6rem;
 }
 .section-hero__heading-primary {
   font-size: 6.4rem;
@@ -65,15 +66,13 @@ SECTION HERO
   text-transform: uppercase;
   text-align: center;
   color: var(--color-white);
-  /* transform: translateY(-10rem); */
 }
 .section-hero__heading-secondary {
-  font-size: 3rem;
+  font-size: 3.2rem;
   letter-spacing: 3px;
   text-transform: uppercase;
   text-align: center;
   color: var(--color-white);
-  /* transform: translateY(-10rem); */
 }
 
 .hero-section-btn {
@@ -91,3 +90,35 @@ SECTION HERO
 SECTION ABOUT
 ///////////////////////////////////////// 
 */
+.section-about {
+  display: flex;
+  gap: 6.4rem;
+}
+.section-about__text-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.section-about__img {
+  max-width: 40%;
+}
+.section-about__text {
+  font-size: 2rem;
+}
+
+.section-about__button {
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--color-white);
+  background-color: var(--primary-color);
+  margin-top: 3rem;
+  padding: 2rem;
+  border: none;
+  align-self: flex-start;
+  transition: all 0.3s;
+}
+.section-about__button:hover {
+  background-color: var(--primary-color-dark-1);
+}

@@ -5,8 +5,9 @@
   --font-color-dark-1: #333;
 
   --primary-color: #e1b65e;
-  --primary-color-light-1: #f6e9cf;
-  --primary-color-light-2: #ffe5b0;
+  --primary-color-light-1: #ffe5b0;
+
+  --primary-color-dark-1: #b4924b;
 }
 
 @keyframes button-animation {
@@ -44,13 +45,11 @@ body {
 }
 
 .container {
-  max-width: 130rem;
-  padding: 0 3.2rem;
-  margin: 0 auto;
+  max-width: 160rem;
+  margin: 0 auto 19.2rem auto;
 }
 
 .heading-secondary {
+  font-size: 3.2rem;
   text-transform: uppercase;
-  font-size: 3.6rem;
-  color: var(--font-color-dark-1);
 }
