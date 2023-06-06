@@ -1,94 +1,23 @@
-:root {
-  --color-white: #fff;
-  --color-black: #000;
-
-  --font-color-dark-1: #333;
-
-  --primary-color: #e1b65e;
-  --primary-color-light-1: #f6e9cf;
-  --primary-color-light-2: #edd39e;
-}
-
-@keyframes button-animation {
-  0% {
-    color: var(--color-white);
-  }
-
-  50% {
-    color: var(--primary-color-light-1);
-    transform: translateY(5px);
-  }
-  100% {
-    color: var(--color-white);
-    transform: translateY(0);
-  }
-}
-
-*,
-*::after,
-*::before {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 62.5%;
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  line-height: 1.7;
-}
-
-.container {
-  max-width: 130rem;
-  padding: 0 3.2rem;
-  margin: 0 auto;
-}
-
-.heading-secondary {
-  text-transform: uppercase;
-  font-size: 3.6rem;
-  color: var(--font-color-dark-1);
-}
-
 /*
 /////////////////////////////////////////
 HEADER
 /////////////////////////////////////////
 */
 /* dodać animacje wejścia */
-.section-hero__heading-primary {
-  text-transform: uppercase;
-  font-size: 6.4rem;
-  letter-spacing: 5px;
-  color: var(--color-white);
-  transform: translateY(-10rem);
-}
-.section-hero__heading-secondary {
-  text-transform: uppercase;
-  font-size: 3rem;
-  letter-spacing: 5px;
-  color: var(--color-white);
-  transform: translateY(-11rem);
-  text-align: center;
-}
 
 .header {
   background-color: var(--primary-color);
   max-width: 100%;
-  height: 9.5rem;
+  height: 9vh;
 }
 
 .main-nav__list {
+  list-style: none;
+  height: 9vh;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 6.4rem;
-  list-style: none;
 }
 
 .main-nav__list-item {
@@ -103,12 +32,13 @@ HEADER
   text-decoration: none;
   color: var(--color-white);
   cursor: pointer;
-  transition: all 0.2s;
+  transition: color 0.2s;
 }
 
 .main-nav__list-link:hover,
 .main-nav__list-link:active {
-  color: var(--primary-color-light-1);
+  color: var(--primary-color-light-2); /* do zmiany jeszcze */
+  border-bottom: 2px solid var(--color-white);
 }
 
 /* 
@@ -116,7 +46,7 @@ HEADER
 SECTION HERO
 ///////////////////////////////////////// 
 */
-/* dodać karuzele ze zdjęciami */
+
 .section-hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url(/img/hero.jpg);
@@ -124,24 +54,38 @@ SECTION HERO
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 5rem;
   background-attachment: fixed;
-  height: 91.1vh;
-  position: relative;
+  height: 91vh;
 }
+.section-hero__heading-primary {
+  font-size: 6.4rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--color-white);
+  /* transform: translateY(-10rem); */
+}
+.section-hero__heading-secondary {
+  font-size: 3rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--color-white);
+  /* transform: translateY(-10rem); */
+}
+
 .hero-section-btn {
   position: absolute;
-  bottom: 5%;
+  bottom: 2%;
 }
 .hero-section-icon {
   height: 4.8rem;
   width: 4.8rem;
-  color: var(--color-white);
   animation: button-animation 1s infinite;
 }
+
 /* 
 /////////////////////////////////////////
 SECTION ABOUT
