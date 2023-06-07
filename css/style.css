@@ -122,3 +122,13 @@ SECTION ABOUT
 .section-about__button:hover {
   background-color: var(--primary-color-dark-1);
 }
+/* 
+/////////////////////////////////////////
+SECTION INFO
+///////////////////////////////////////// 
+*/
+.section-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 19.2rem 0;
+}
