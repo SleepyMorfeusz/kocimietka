@@ -32,13 +32,13 @@ HEADER
   text-decoration: none;
   color: var(--color-white);
   cursor: pointer;
+  position: relative;
   transition: color 0.2s;
 }
 
 .main-nav__list-link:hover,
 .main-nav__list-link:active {
   color: var(--primary-color-light-1); /* do zmiany jeszcze */
-  border-bottom: 2px solid var(--color-white);
 }
 
 /* 
@@ -66,6 +66,7 @@ SECTION HERO
   text-transform: uppercase;
   text-align: center;
   color: var(--color-white);
+  font-weight: 500;
 }
 .section-hero__heading-secondary {
   font-size: 3.2rem;
@@ -73,6 +74,7 @@ SECTION HERO
   text-transform: uppercase;
   text-align: center;
   color: var(--color-white);
+  font-weight: 500;
 }
 
 .hero-section-btn {
@@ -92,7 +94,7 @@ SECTION ABOUT
 */
 .section-about {
   display: flex;
-  gap: 6.4rem;
+  gap: 8rem;
 }
 .section-about__text-box {
   display: flex;
@@ -105,6 +107,7 @@ SECTION ABOUT
 }
 .section-about__text {
   font-size: 2rem;
+  /* max-width: 100%; */
 }
 
 .section-about__button {
@@ -118,6 +121,7 @@ SECTION ABOUT
   border: none;
   align-self: flex-start;
   transition: all 0.3s;
+  cursor: pointer;
 }
 .section-about__button:hover {
   background-color: var(--primary-color-dark-1);
@@ -130,5 +134,30 @@ SECTION INFO
 .section-info {
   display: flex;
   justify-content: space-between;
-  margin: 19.2rem 0;
+  gap: 1rem;
+}
+.section-info__table {
+  font-size: 2.4rem;
+  width: 80rem;
+  border: 5px dashed var(--primary-color);
+  padding: 2.4rem;
+}
+td {
+  text-align: end;
+  height: 15rem;
+}
+.section-info__table-heading {
+  font-size: 3.6rem;
+  text-align: center;
+  height: 7rem;
+}
+.section-info__table-text {
+  text-align: left;
+}
+.section-info__span {
+  color: var(--primary-color);
+}
+.section-info__map {
+  border: 5px dashed var(--primary-color);
+  padding: 2.3rem;
 }
