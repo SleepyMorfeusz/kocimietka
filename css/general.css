@@ -51,6 +51,4 @@ body {
 
 .hidden {
   display: none;
-  transform: translate(9999px);
-  opacity: 0;
 }
