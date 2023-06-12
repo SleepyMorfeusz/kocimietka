@@ -8,12 +8,17 @@ HEADER
 .header {
   background-color: var(--primary-color);
   max-width: 100%;
-  height: 9vh;
+  height: 11rem;
 }
-
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
 .main-nav__list {
   list-style: none;
-  height: 9vh;
+  height: 11rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -53,11 +58,11 @@ SECTION HERO
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-attachment: fixed;
-  height: 91vh;
+  height: 90rem;
   margin-bottom: 9.6rem;
 }
 .section-hero__heading-primary {
@@ -107,7 +112,6 @@ SECTION ABOUT
 }
 .section-about__text {
   font-size: 2rem;
-  /* max-width: 100%; */
 }
 
 .section-about__button {
