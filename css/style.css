@@ -22,7 +22,7 @@ HEADER
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 6.4rem;
+  gap: 4.8rem;
 }
 
 .main-nav__list-item {
@@ -113,7 +113,10 @@ SECTION ABOUT
 .section-about__text {
   font-size: 2rem;
 }
-
+.section-about__heading-secondary {
+  font-size: 3.2rem;
+  text-transform: uppercase;
+}
 .section-about__button {
   font-size: 1.6rem;
   font-weight: 600;
