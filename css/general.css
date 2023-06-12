@@ -48,3 +48,9 @@ body {
   max-width: 170rem;
   margin: 19.2rem auto;
 }
+
+.hidden {
+  display: none;
+  transform: translate(9999px);
+  opacity: 0;
+}
