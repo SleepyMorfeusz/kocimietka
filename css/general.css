@@ -52,3 +52,7 @@ body {
 .hidden {
   display: none;
 }
+.footer-container {
+  max-width: 170rem;
+  margin: 0 auto;
+}
