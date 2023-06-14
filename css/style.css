@@ -131,8 +131,10 @@ SECTION ABOUT
   cursor: pointer;
 }
 .section-about__button:hover {
-  background-color: var(--primary-color-dark-1);
+  background-color: var(--primary-color-light-1);
+  color: inherit;
   transform: scale(1.1);
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.1);
 }
 /* 
 /////////////////////////////////////////
@@ -246,7 +248,7 @@ FOOTER
 
 .logo-col__list-link:hover,
 .logo-col__list-link:active {
-  color: grey;
+  color: var(--color-white);
 }
 .footer-heading {
   font-size: 1.8rem;
@@ -268,8 +270,11 @@ FOOTER
 .footer-address-link {
   text-decoration: none;
   color: var(--primary-color-light-1);
+  transition: all 0.3s;
 }
-
+.footer-address-link:hover {
+  color: var(--color-white);
+}
 .footer-nav {
   font-size: 1.6rem;
   list-style: none;
@@ -283,5 +288,5 @@ FOOTER
 }
 .footer-nav-link:hover,
 .footer-nav-link:active {
-  color: white;
+  color: var(--color-white);
 }
