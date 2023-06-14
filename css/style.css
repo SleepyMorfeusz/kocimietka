@@ -34,16 +34,29 @@ HEADER
 
 .main-nav__list-link:link,
 .main-nav__list-link:visited {
-  text-decoration: none;
+  display: inline-block;
   color: var(--color-white);
+  text-decoration: none;
   cursor: pointer;
   position: relative;
-  transition: color 0.2s;
+  padding-bottom: 0.25rem;
 }
-
 .main-nav__list-link:hover,
 .main-nav__list-link:active {
-  color: var(--primary-color-light-1); /* do zmiany jeszcze */
+  color: var(--primary-color-light-2);
+}
+.main-nav__list-link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background-color: var(--primary-color-light-2);
+  transition: width 0.3s ease-in-out;
+}
+.main-nav__list-link:hover:before {
+  width: 100%;
 }
 
 /* 
