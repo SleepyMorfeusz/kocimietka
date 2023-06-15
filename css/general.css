@@ -4,6 +4,7 @@
   --primary-color-light-2: #f8edcf;
   --primary-color-dark-1: #ca965c;
   --color-white: #fff;
+  --color-black: #281e15;
 }
 
 @keyframes button-animation {
