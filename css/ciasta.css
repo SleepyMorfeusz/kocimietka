@@ -1,5 +1,49 @@
+.cakes-container {
+  max-width: 126rem;
+  margin: 10rem auto 21rem auto;
+}
+
 .grid-container {
+  margin-top: 8rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
+  column-gap: 2rem;
+  row-gap: 4rem;
+}
+.heading-main {
+  text-align: center;
+  font-size: 4.8rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+.cakes-description {
+  font-size: 1.8rem;
+  text-align: center;
+}
+.cakes-description-span {
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.cake-text-box {
+  text-align: center;
+  margin-top: 5.5rem;
+  text-transform: uppercase;
+}
+.cake-name {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+.cake-price {
+  font-size: 2rem;
+}
+.cake {
+  height: 37rem;
+  background-color: var(--primary-color-light-2);
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.cake:hover {
+  background-color: var(--primary-color-light-1);
 }
