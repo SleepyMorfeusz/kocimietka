@@ -27,9 +27,12 @@
 }
 
 .cake-text-box {
+  display: flex;
+  flex-direction: column;
   text-align: center;
-  margin-top: 5.5rem;
+
   text-transform: uppercase;
+  padding: 1rem;
 }
 .cake-name {
   font-size: 2.4rem;
