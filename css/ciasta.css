@@ -1,5 +1,5 @@
 .cakes-container {
-  max-width: 126rem;
+  max-width: 70%;
   margin: 10rem auto 21rem auto;
 }
 
@@ -25,12 +25,13 @@
   color: var(--primary-color);
   border-bottom: 2px solid var(--primary-color);
 }
-
+.cake-img {
+  width: 100%;
+}
 .cake-text-box {
   display: flex;
   flex-direction: column;
   text-align: center;
-
   text-transform: uppercase;
   padding: 1rem;
 }
@@ -42,10 +43,10 @@
   font-size: 2rem;
 }
 .cake {
-  height: 37rem;
   background-color: var(--primary-color-light-2);
   transition: all 0.3s;
   cursor: pointer;
+  min-width: 100%;
 }
 .cake:hover {
   background-color: var(--primary-color-light-1);
