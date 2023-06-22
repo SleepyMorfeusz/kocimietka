@@ -14,7 +14,7 @@ SECTION HERO
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 90rem;
+  min-height: 90rem;
   margin-bottom: 9.6rem;
 }
 .section-hero__heading-primary {
@@ -36,7 +36,7 @@ SECTION HERO
 
 .hero-section-btn {
   position: absolute;
-  bottom: 2%;
+  bottom: 1rem;
 }
 .hero-section-icon {
   height: 4.8rem;
@@ -52,6 +52,7 @@ SECTION ABOUT
 .section-about {
   display: flex;
   justify-content: space-between;
+  flex-basis: 100%;
 }
 .section-about__text-box {
   display: flex;
@@ -64,7 +65,7 @@ SECTION ABOUT
   width: 40%;
 }
 .section-about__img {
-  width: 100%;
+  max-width: 100%;
   height: 100%;
 }
 .section-about__text {

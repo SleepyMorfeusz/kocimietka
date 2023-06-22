@@ -17,6 +17,8 @@
 }
 .blog-post {
   width: 45rem;
+  border-radius: 5px;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   background-color: var(--primary-color-light-2);
@@ -43,8 +45,10 @@
 }
 .blog-post-heading {
   font-size: 2rem;
+  padding: 0 1.5rem;
 }
 .blog-post-text {
   font-size: 1.6rem;
   margin: auto 0;
+  padding: 1.5rem;
 }
