@@ -35,16 +35,6 @@ SECTION HERO
   font-weight: 500;
 }
 
-.hero-section-btn {
-  position: absolute;
-  bottom: 7%;
-}
-.hero-section-icon {
-  height: 4.8rem;
-  width: 4.8rem;
-  animation: button-animation 1s infinite;
-}
-
 /* 
 /////////////////////////////////////////
 SECTION ABOUT
