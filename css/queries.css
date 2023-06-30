@@ -122,3 +122,11 @@
     background-attachment: local;
   }
 }
+@media (max-width: 44em) {
+  html {
+    font-size: 37.5%;
+  }
+  .header-logo {
+    height: 10rem;
+  }
+}
