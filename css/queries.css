@@ -41,9 +41,6 @@
   }
 }
 @media (max-width: 66em) {
-  .section-hero {
-    height: 100vh;
-  }
   .section-info,
   .section-about {
     grid-template-columns: 1fr;
@@ -79,5 +76,49 @@
   }
   .sponsor-logo {
     width: 65%;
+  }
+  .main-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--primary-color);
+    transform: translateX(100%);
+    transition: all 0.5s ease-in;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    z-index: 100;
+  }
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: all;
+    visibility: visible;
+    transform: translateX(0);
+  }
+  .nav-open .close {
+    display: block;
+  }
+  .nav-open .open {
+    display: none;
+  }
+  .main-nav__list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+  .main-nav__list-link:link,
+  .main-nav__list-link:visited {
+    font-size: 3rem;
+  }
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+  .section-hero {
+    background-attachment: local;
   }
 }
