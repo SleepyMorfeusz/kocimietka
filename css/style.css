@@ -14,7 +14,7 @@ SECTION HERO
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 90rem;
+  min-height: 95vh;
   margin-bottom: 9.6rem;
   position: relative;
 }
@@ -37,7 +37,7 @@ SECTION HERO
 
 .hero-section-btn {
   position: absolute;
-  bottom: 1rem;
+  bottom: 7%;
 }
 .hero-section-icon {
   height: 4.8rem;
@@ -51,18 +51,16 @@ SECTION ABOUT
 ///////////////////////////////////////// 
 */
 .section-about {
-  display: flex;
-  justify-content: space-between;
-  flex-basis: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 4.8rem;
 }
 .section-about__text-box {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 55%;
 }
 .section-about__img-box {
-  width: 40%;
   padding: 4rem 0;
 }
 .section-about__img {
@@ -101,12 +99,13 @@ SECTION INFO
 ///////////////////////////////////////// 
 */
 .section-info {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 6.4rem;
 }
 .section-info__table {
   font-size: 2.4rem;
-  width: 45%;
+
   border: 5px dashed var(--primary-color);
   padding: 2.4rem;
 }
@@ -129,7 +128,6 @@ td {
 .section-info__map {
   border: 5px dashed var(--primary-color);
   padding: 2.4rem;
-  width: 45%;
 }
 .map {
   width: 100%;
@@ -151,19 +149,18 @@ SECTION SPONSORS
 .section-sponsors__box {
   background-color: var(--primary-color);
   border-bottom: 10px solid var(--primary-color-dark-1);
-  padding: 1rem;
+
   height: 15rem;
+  display: flex;
+  justify-content: space-around;
+}
+.section-sponsor__logo-box {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 7.2rem;
-}
-.section-sponsor__logo-box {
-  margin: 0 auto;
 }
 .sponsor-logo {
   width: 80%;
-
   cursor: pointer;
   transition: all 0.2s;
 }
@@ -173,8 +170,6 @@ SECTION SPONSORS
 .section-sponsors__text-boxes {
   background-color: var(--primary-color-light-1);
   padding: 6rem;
-  display: flex;
-  align-items: center;
 }
 
 .sponsor-text {

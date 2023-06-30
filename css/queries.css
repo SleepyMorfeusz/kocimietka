@@ -1,8 +1,4 @@
 @media (max-width: 95em) {
-  .section-info__table,
-  .section-info__map {
-    width: 48%;
-  }
   .map {
     height: 50rem;
   }
@@ -11,5 +7,77 @@
   }
   .section-info__table {
     font-size: 2.2rem;
+  }
+}
+@media (max-width: 80em) {
+  html {
+    font-size: 56.25%;
+  }
+  .section-about__text {
+    line-height: 1.5;
+  }
+  .map {
+    height: 45rem;
+  }
+  .header-logo {
+    height: 7rem;
+  }
+  .section-hero__heading-primary {
+    font-size: 4.8rem;
+  }
+  .section-hero__heading-secondary {
+    font-size: 2.4rem;
+  }
+}
+@media (max-width: 72em) {
+  html {
+    font-size: 50%;
+  }
+  .main-nav__list-item {
+    font-size: 1.8rem;
+  }
+  .section-sponsors__text-boxes {
+    padding: 4rem;
+  }
+}
+@media (max-width: 66em) {
+  .section-hero {
+    height: 100vh;
+  }
+  .section-info,
+  .section-about {
+    grid-template-columns: 1fr;
+    max-width: 75%;
+    row-gap: 6.4rem;
+  }
+  .section-about__img {
+    display: none;
+  }
+  .section-about__text-box {
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0.8),
+        rgba(255, 255, 255, 0.8)
+      ),
+      url(../img/section_about.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    padding: 10rem 5rem;
+  }
+  .section-hero {
+    margin-bottom: 0;
+  }
+  .container {
+    margin: 15rem auto;
+  }
+  .section-about__img-box {
+    padding: 0;
+  }
+  .map {
+    height: 50rem;
+  }
+  .sponsor-logo {
+    width: 65%;
   }
 }
