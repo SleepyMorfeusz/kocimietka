@@ -16,6 +16,7 @@ SECTION HERO
   align-items: center;
   min-height: 90rem;
   margin-bottom: 9.6rem;
+  position: relative;
 }
 .section-hero__heading-primary {
   font-size: 6.4rem;
@@ -61,8 +62,8 @@ SECTION ABOUT
   width: 55%;
 }
 .section-about__img-box {
-  margin: auto;
   width: 40%;
+  padding: 4rem 0;
 }
 .section-about__img {
   max-width: 100%;
@@ -127,7 +128,7 @@ td {
 }
 .section-info__map {
   border: 5px dashed var(--primary-color);
-  padding: 2.3rem;
+  padding: 2.4rem;
   width: 45%;
 }
 .map {

@@ -1,0 +1,15 @@
+@media (max-width: 95em) {
+  .section-info__table,
+  .section-info__map {
+    width: 48%;
+  }
+  .map {
+    height: 50rem;
+  }
+  .section-info__table-heading {
+    font-size: 3.2rem;
+  }
+  .section-info__table {
+    font-size: 2.2rem;
+  }
+}
