@@ -41,9 +41,8 @@
   }
 }
 @media (max-width: 66em) {
-  body,
-  html {
-    overflow-x: hidden;
+  .section-hero {
+    min-height: 87.3vh;
   }
   .section-info,
   .section-about {
@@ -132,5 +131,8 @@
   }
   .header-logo {
     height: 10rem;
+  }
+  .section-hero {
+    min-height: 89.5vh;
   }
 }

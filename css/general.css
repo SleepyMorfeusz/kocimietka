@@ -83,6 +83,7 @@ HEADER
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem 1rem;
+  position: relative;
 }
 
 .main-nav__list {
