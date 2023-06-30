@@ -41,6 +41,10 @@
   }
 }
 @media (max-width: 66em) {
+  body,
+  html {
+    overflow-x: hidden;
+  }
   .section-info,
   .section-about {
     grid-template-columns: 1fr;

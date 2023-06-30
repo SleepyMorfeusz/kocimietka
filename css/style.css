@@ -14,7 +14,7 @@ SECTION HERO
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 91rem;
+  min-height: 100vh;
   margin-bottom: 9.6rem;
   position: relative;
 }
